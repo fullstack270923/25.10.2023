@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+</head>
+<body>
+    <hr />
+    <div>
+        this is my &lt; &gt; &nbsp; div 
+    </div>
+    <br />
+    <!-- file:///D:/ecom/fullstack29_06_23/25.10.2023/form1.html 
+           ? name=itay & 
+             age=25 &
+            b_day=2023-10-10 &
+            f_color=%23b58e21 -->
+    <form action="" >
+        <label for="name" >Name: </label>
+        <input type="text" id="name" name="name" placeholder="NAME PLEASE" required >
+        <br /><br />
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" placeholder="AGE" min="0" required>        
+        <br /><br />
+        <label for="b_day">Birth date: </label>
+        <input type="date" id="b_day" name="b_day" placeholder="Birth day" required>        
+        <br /><br />
+        <label for="f_color">Fav color: </label>
+        <input type="color" id="f_color" name="f_color" placeholder="fav color" required>        
+        <br /><br />
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="password" required>        
+        <br /><br />        
+        <label for="resume">CV: </label>
+        <textarea></textarea>
+        <br /><br />  
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>                      
+        <br /><br />  
+        <label for="lang">Language:</label>
+        <input type="radio" id="heb" name="lang" value="heb">
+        <label for="male">Hebrew</label>
+        <input type="radio" id="eng" name="lang" value="eng">
+        <label for="female">English</label>                              
+        <br /><br />  
+        Fav color: <select id="colors" name="colors">
+            <option value="red" style="color:red">Red</option>
+            <option value="green" style="color:rgb(81, 247, 81)">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="other">Other</option>
+        </select>
+        <br /><br />  
+
+        <label>Interests:</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="movies" name="interests" value="movies">
+        <label for="movies">Movies</label>
+        <input type="checkbox" id="books" name="interests" value="books">
+        <label for="books">Books</label>
+        <br>
+
+        <br /><br />  
+
+        <!-- <input type="submit" value="Submit"> -->
+        <button type="submit">Submit</button>&nbsp;&nbsp;
+        <button type="clear">Clear</button>
+    </form>
+</body>
+</html>
